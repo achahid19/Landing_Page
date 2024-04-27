@@ -1,11 +1,23 @@
+/* This CSS code block defines a set of custom properties (CSS variables) within the :root pseudo-class. Here's a breakdown of what each part does:
+
+    :root: This pseudo-class represents the highest-level element in the document tree, typically the <html> element. Using :root allows you to define global CSS variables that can be accessed throughout your stylesheet.
+
+    Custom properties:
+        --clr-accent-400, --clr-accent-100, --clr-primary-400, --clr-neutral-100, --clr-neutral-900: These define various color values using the HSL (Hue, Saturation, Lightness) color model.
+        --ff-primary, --ff-body, --ff-heading: These define font families. --ff-primary sets the primary font family, while --ff-body and --ff-heading inherit their values from --ff-primary.
+        --fw-regular, --fw-semi-bold, --fw-bold: These set font weights for different text elements.
+        --fs-300 to --fs-900: These set font sizes for different text elements.
+        --fs-body, --fs-primary-heading, --fs-secondary-heading, --fs-nav, --fs-button: These inherit their font sizes from the corresponding --fs-* variables.
+
+In summary, this code block defines a consistent set of design tokens (colors, font families, font weights, and font sizes) using CSS variables, making it easy to maintain and apply consistent styles throughout your website or application. */
 :root {
     --clr-accent-400: hsl(12, 88%, 59%);
     --clr-accent-100: hsl(13, 100%, 96%);
   
     --clr-primary-400: hsl(228, 39%, 23%);
   
-    --clr-neutral-100: hsl(232, 12%, 13%);
-    --clr-neutral-900: hsl(0 0% 0%);
+    --clr-neutral-900: hsl(232, 12%, 13%);
+    --clr-neutral-100: hsl(0 0% 100%);
   
     --ff-primary: "Be Vietnam Pro", sans-serif;
   
@@ -16,7 +28,14 @@
     --fw-semi-bold: 500;
     --fw-bold: 700;
   
-    --fs-300: 0.8125rem;
+    --fs-300: 0.8125rem; /*1rem is a CSS unit of measurement that represents the computed font size of the root element (<html>), which is typically defined in pixels (px). In simpler terms:
+
+    1rem is equal to the font size of the root element.
+    If the root element's font size is 16px, then 1rem equals 16px.
+    If the root element's font size is 20px, then 1rem equals 20px.
+    It allows for relative sizing, making it easier to scale elements proportionally based on the root font size.
+
+    So, rather than specifying exact pixel values, using rem helps maintain consistency and adaptability across different screen sizes and accessibility settings.*/
     --fs-400: 0.875rem;
     --fs-500: 0.9375rem;
     --fs-600: 1rem;
@@ -169,4 +188,34 @@
   }
   .fs-600 {
     font-size: var(--fs-600);
+  }
+/*  */
+  .container {
+    --max-width: 1579px;
+    --padding: 1rem;
+
+    /* chose min value btw max-width and 100% */
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+  }
+
+  .even-columns {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 50em) {
+    .even-columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+  }
+
+  /* General styling */
+  body {
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    color: var(--clr-accent-400);
+
+
   }
