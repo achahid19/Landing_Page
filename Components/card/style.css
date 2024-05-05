@@ -6,7 +6,7 @@
 body {
     min-width: 100vw; /* Set width relative to the viewport width */
     min-height: 100vh; /* Set height realive to viewport width */
-    background-color: rgba(231, 202, 35, 0.801);
+    background-color: gold;
     font-family: myFirstFont;
     font-size: medium;
     display: flex;
@@ -24,7 +24,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); */
     border: 1px solid;
-    box-shadow: 20px 10px 30px black ;
+    box-shadow: 5px 5px 0px black ;
     padding: 30px;
     
 }
