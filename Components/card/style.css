@@ -4,38 +4,54 @@
  }
 
 body {
-    width: vw; /* Set width relative to the viewport width */
-    height: vh; /* Set height realive to viewport width */
-    background-color: rgb(248, 213, 14);
+    min-width: 100vw; /* Set width relative to the viewport width */
+    min-height: 100vh; /* Set height realive to viewport width */
+    background-color: rgba(231, 202, 35, 0.801);
     font-family: myFirstFont;
     font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: fit-content; /* how to fix the size ? */
+    width: 360px;
+    height: fit-content;
     background-color: white;
     border-radius: 15px;
-    position: absolute;
+ /*    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     border: 1px solid;
+    box-shadow: 20px 10px 30px black ;
+    padding: 30px;
     
+}
+
+.card {
+    width: 100%;
+}
+
+.card p
+{
+   overflow-x: hidden;
+   width: 100%;
+}
+
+.container img {
+    width: 100%;
 }
 
 .button {
     border: none;
     border-radius: 5px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 8px;
-    font-weight: bold;
+    font-weight: 800;
     background-color: gold;
     text-align: center;
     margin-top: 15px;
-}
-
-.card {
-    padding: 30px;
 }
 
 .tag {
@@ -52,4 +68,13 @@ body {
 
 .tag span {
     font-weight: bold;
+    font-size: 15px;
+}
+
+p {
+    color: grey;
+}
+
+h6 {
+    font-weight: 510;
 }
