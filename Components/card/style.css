@@ -1,0 +1,38 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff); 
+ }
+
+body {
+    width: vw;
+    height: vh;
+    background-color: rgb(248, 213, 14);
+    font-family: myFirstFont;
+    font-size: medium;
+}
+
+.container {
+    width: fit-content;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 8px;
+    font-weight: bold;
+    background-color: gold;
+    text-align: center;
+}
+
+.card {
+    padding: 30px;
+}
+
+.tag img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
