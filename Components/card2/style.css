@@ -1,0 +1,41 @@
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #000000;
+    color: hsl(0, 0%, 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 360px;
+    height: fit-content;
+    background: hsl(0, 0%, 10%);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px; 
+}
+
+h3 {
+    color: rgb(88, 217, 88);
+    line-height: 1rem;
+}
+
+.box {
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
