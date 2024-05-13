@@ -1,6 +1,9 @@
 body {
     background-image: url(./Component\ 4.svg);
-    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     min-width: 100vw;
     min-height: 100vh;
     background-color: rgba(8, 32, 50, 1);
@@ -18,7 +21,7 @@ body {
     background-color: rgba(240, 165, 0, 1);
     border-radius: 20px;
     margin-top: 40px;
-    box-shadow: 1px 1px 40px white;
+    /* box-shadow: 1px 1px 40px white; */
 }
 
 .nav-container ul {
@@ -30,7 +33,7 @@ body {
 }
 
 .nav-container img {
-    image-rendering:optimizeQuality;
+    image-rendering: optimizeQuality;
 }
 
 a
