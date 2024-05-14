@@ -1,53 +1,67 @@
 body {
-    background-image: url(./Component\ 4.svg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: rgba(8, 32, 50, 1);
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./Component\ 4.svg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(8, 32, 50, 1);
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-container {
-    width: 992px;
-    height: 34px;
-    padding: 20px;
-    display: flex;
-    align-items: center;  
-    background-color: rgba(240, 165, 0, 1);
-    border-radius: 20px;
-    margin-top: 40px;
-    /* box-shadow: 1px 1px 40px white; */
+  width: 992px;
+  height: 34px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(240, 165, 0, 1);
+  border-radius: 20px;
+  margin-top: 40px;
+  /* box-shadow: 1px 1px 40px white; */
+}
+
+.media i {
+  font-size: 30px;
+  margin: 0 10px;
 }
 
 .nav-container ul {
-    display: flex;
-    flex-direction: row;
-    gap: 190px;
-    list-style: none;
-    margin: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 190px; */
+  list-style: none;
+  /* margin: -30px; */
+}
+
+ul li {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 0 10px;
 }
 
 .nav-container img {
-    image-rendering: optimizeQuality;
+  image-rendering: optimizeQuality;
 }
 
-a
-{
-    text-decoration: none;
-    font-weight: bold;
-    color: rgba(8, 32, 50, 1);
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(8, 32, 50, 1);
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 #special {
-    color: white;
+  color: white;
 }
