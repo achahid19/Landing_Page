@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   background-color: rgba(8, 32, 50, 1);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,9 +45,6 @@ header {
 }
 
 ul li {
-/*   display: flex;
-  justify-content: center;
-  align-items: center; */
   margin: 0 10px;
 }
 
@@ -71,11 +68,57 @@ a:hover {
 }
 
 #hidden {
-  content-visibility: hidden;
+  display: none;
 }
 
-#hidden-social {
-  content-visibility: hidden;
+main {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-container {
+  width: 40%;
+  margin: auto;
+}
+
+.body-container img {
+  /* width: 30%;
+  height: 30%; */
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(240, 165, 0, 1);
+  border-width: 0.5px;
+  box-shadow: 5px 5px 200px rgba(240, 165, 0, 1);
+  margin-top: 30px;
+}
+
+.body-container span {
+  color: white;
+  position: absolute;
+  margin-left: 17.5%;
+}
+
+#special-span {
+  color: rgba(240, 165, 0, 1);
+  position: relative;
+  margin-left: 2px;
+}
+
+#svg {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 13%;
+}
+
+.body-text {
+  margin: 2% 20% 0%;
+  color: white;
+  line-height: 200%;
 }
 
 @media (max-width: 1120px)
@@ -90,7 +133,7 @@ a:hover {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-right: 0px;
     padding-left: 0px;
   }
@@ -100,11 +143,11 @@ a:hover {
   }
 
   li, .media a i {
-    content-visibility: hidden;
+    display: none;
   }
 
   #hidden {
-    content-visibility: visible;
+    display: block;
   }
 
   i {
