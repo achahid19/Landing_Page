@@ -152,7 +152,7 @@ main {
     width: 90%;
     margin: auto;
   }
-  
+
   .nav-container img {
     width: 60px;
     height: 60px;
@@ -182,5 +182,9 @@ main {
 
   #svg {
 	display: none;
+  }
+
+  main {
+	margin: 20px;
   }
 }
