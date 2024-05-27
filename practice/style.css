@@ -1,0 +1,230 @@
+/* Default Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+}
+
+/* nav bar styling */
+
+.primary-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.primary-nav button {
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border: 1px white solid;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.nav-menu li {
+    transition: 0.7s;
+}
+
+.nav-menu li:hover {
+    font-size: larger;
+    color: darkblue;
+}
+
+.primary-nav button:hover, #second-button:hover {
+    font-size: larger;
+    background-color: gray;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons img {
+    cursor: pointer;
+}
+
+.buttons img, .hamburger {
+    display: none;
+}
+
+.hamburger {
+    position: fixed;
+    text-align: center;
+    width: 95%;
+    background-color: black;
+    top: 90px;
+    border-radius: 15px;
+    padding: 15px 0;
+    opacity: 0.95;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hamburger-menu li {
+    color: white;
+    transition: 0.7s;
+    text-decoration: underline;
+}
+
+.hamburger-menu li:hover {
+    color: darkblue;
+    font-size: larger;
+    text-decoration: none;
+}
+
+
+/* main styling */
+
+main {
+    margin-top: 100px;
+}
+
+.fp-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#first-button, #second-button {
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+#first-button {
+    background-color: blue;
+    border: none;
+    transition: 0.7s;
+}
+
+#first-button:hover {
+    background-color: darkblue;
+    font-size: larger;
+}
+
+#second-button {
+    transition: 0.7s;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.screen-container img {
+    width: 100%;
+}
+
+.sp-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgb(29, 28, 35);
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.features-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 100%;
+}
+
+#logo-span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#image {
+    width: 600px;
+}
+
+.features-list {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media (max-width: 900px)
+{
+    .primary-nav .nav-menu {
+        display: none;
+    }
+
+    .primary-nav {
+        justify-content: space-between;
+    }
+
+    .buttons img {
+        display: block;
+    }
+
+    .primary-nav {
+        padding: 0px;
+        margin: 20px;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    #image {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .buttons button {
+        display: none;
+    }
+}
