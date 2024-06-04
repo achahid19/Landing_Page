@@ -1,0 +1,143 @@
+/* Default styling */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Kanit", sans-serif;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to right, black, rgb(1, 1, 63));
+}
+
+/* nav-bar styling */
+
+.primary-nav {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	left: 50px;
+}
+
+.primary-nav span {
+	font-size: 4rem;
+	color: white;
+	font-weight: bold;
+	transition: 0.7s;	
+}
+
+.primary-nav span:hover {
+	color: #699efa;
+	text-shadow: 1px 1px 10px #699efa;
+	cursor: pointer;
+}
+
+.primary-nav-bar {
+	display: flex;
+	gap: 100px;
+}
+
+
+.primary-nav-bar li {
+	font-weight: bold;
+	transition: 0.7s;
+}
+
+.primary-nav-bar li:hover {
+	font-size: larger;
+	border-top: 1px solid white;
+	color: #699efa;
+	text-shadow: 1px 1px 20px #699efa;
+	cursor: pointer;
+}
+
+/* whomai card styling */
+
+.whoami {
+	display: flex;
+	align-items: center;
+	padding: 100px 80px;
+	justify-content: space-evenly;
+	flex-wrap: wrap-reverse;
+}
+
+/* .whoami-card {
+	width: 40%;
+	height: fit-content;
+	padding: 30px;
+	background-color:#6f6ffa2a;
+	border-radius: 30px;
+	text-align: center;
+	overflow: hidden;
+} */
+
+.whoami-card h1 {
+	padding-bottom: 20px;
+	border-bottom: 5px double white;
+}
+
+.whoami-card h1 span {
+	color: #699efa;
+	margin-right: 1px;
+}
+
+.whoami-card p {
+	margin-top: 10px;
+}
+
+.whoami-card {
+	display: flex;
+	flex-direction: column;
+	width: 40%;	
+	height: fit-content;
+	padding:30px ;
+	position:relative;
+	text-align: center;
+}
+
+.whoami-card:before {
+	content:'';
+	position:absolute;
+	z-index:-1;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:url(http://lorempixel.com/1600/800/nature/1) fixed center;
+	filter:blur(20px);
+	background-size:100vw auto;
+	box-shadow:inset 0 0 0 50vw rgba(255,255,255,0.2)
+}
+
+
+.me-container img {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+}
+
+@media (max-width: 894px) {
+	.whoami-card {
+		width: 90%;
+	}
+	.whoami-card p {
+		text-align: start;
+	}
+	.me-container img {
+		width: 300px;
+		height: 300px;
+	}
+}
