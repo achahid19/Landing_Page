@@ -33,7 +33,7 @@ body {
 }
 
 .primary-nav span {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: white;
 	font-weight: bold;
 	transition: 0.7s;	
@@ -54,6 +54,7 @@ body {
 .primary-nav-bar li {
 	font-weight: bold;
 	transition: 0.7s;
+	font-size: 1.1rem;
 }
 
 .primary-nav-bar li:hover {
@@ -86,7 +87,7 @@ body {
 
 .whoami-card h1 {
 	padding-bottom: 20px;
-	border-bottom: 5px double white;
+	border-bottom: 5px double gray;
 }
 
 .whoami-card h1 span {
@@ -96,6 +97,8 @@ body {
 
 .whoami-card p {
 	margin-top: 10px;
+	font-size: 1rem;
+	text-align: start;
 }
 
 .whoami-card {
@@ -116,16 +119,16 @@ body {
 	left:0;
 	bottom:0;
 	right:0;
-	background:url(http://lorempixel.com/1600/800/nature/1) fixed center;
-	filter:blur(20px);
+	filter:blur(200px);
 	background-size:100vw auto;
-	box-shadow:inset 0 0 0 50vw rgba(255,255,255,0.2)
+	box-shadow:inset 0 0 0 100vw rgba(255,255,255,0.2);
+	border-radius: 100px;
 }
 
 
 .me-container img {
-	width: 400px;
-	height: 400px;
+	width: 350px;
+	height: 350px;
 	border-radius: 50%;
 }
 
@@ -133,11 +136,8 @@ body {
 	.whoami-card {
 		width: 90%;
 	}
-	.whoami-card p {
-		text-align: start;
-	}
 	.me-container img {
-		width: 300px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 	}
 }
