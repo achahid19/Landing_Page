@@ -191,12 +191,33 @@ h1 {
 	color: #699efa;
 }
 
+.skills-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.skills-container li {
+	opacity: 0.5;
+	transition: 0.7s;
+}
+
+.skills-container li:hover {
+	opacity: 1;
+	text-shadow: 0 0 10px white;
+}
+
 .skills ul {
 	display: flex;
-	gap: 200px;
-	overflow: scroll;
+	gap: 150px;
 	padding: 20px 40px;
+	overflow: scroll;
 }
+
+#small-svg {
+	display: none;
+}
+
 
 @media (max-width: 894px) {
 	.whoami-card {
@@ -215,6 +236,22 @@ h1 {
 	@media (max-width: 600px) {
 		.primary-nav-bar {
 			display: none;
+		}
+	}
+
+	@media (max-width: 760px) {
+		#big-svg {
+			display: none;
+		}
+
+		#small-svg {
+			display: block;
+			margin-top: -30px;
+		}
+
+		.job-title {
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 }
