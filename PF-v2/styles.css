@@ -102,7 +102,13 @@ body {
 	font-size: 1.1rem;
 }
 
-.primary-nav-bar li:hover, #current {
+#current {
+	font-size: 1.1rem;
+	border-top: 1px solid white;
+	color: #699efa;
+}
+
+.primary-nav-bar li:hover, #current:hover {
 	font-size: larger;
 	border-top: 1px solid white;
 	color: #699efa;
