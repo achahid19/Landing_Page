@@ -69,11 +69,10 @@ body {
 
 .primary-nav {
 	width: 90%;
-	margin: auto;
+	margin: 0 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	left: 50px;
 	position: fixed;
 	top: 0;
 }
