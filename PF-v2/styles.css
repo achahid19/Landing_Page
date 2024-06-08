@@ -262,13 +262,9 @@ h1 {
 
 .skills ul {
 	display: flex;
-	gap: 140px;
+	gap: 80px;
 	padding: 20px 40px;
 	animation: 30s slide linear infinite;
-}
-
-#margin-skill {
-	margin-left: 80px;
 }
 
 .skills:hover ul {
@@ -325,12 +321,8 @@ h1 {
 	}
 }
 
-@media (min-width: 2600px) {
+@media (min-width: 2300px) {
 	.skills ul {
 		gap: 200px;
-	}
-
-	#margin-skill {
-		margin-left: 120px;
 	}
 }
