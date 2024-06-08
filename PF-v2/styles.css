@@ -38,7 +38,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(to right, black, rgb(1, 1, 63));
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 /* social media styling  */
@@ -316,7 +316,7 @@ h1 {
 		}
 
 		.skills ul {
-			gap: 40px;
+			gap: 60px;
 		}
 	}
 }
