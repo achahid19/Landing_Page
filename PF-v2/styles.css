@@ -313,5 +313,9 @@ h1 {
 		#second-section {
 			margin-top: -80px;
 		}
+
+		.skills ul {
+			gap: 60px;
+		}
 	}
 }
