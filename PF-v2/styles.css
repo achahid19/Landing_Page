@@ -10,6 +10,15 @@
     }
 }
 
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -213,16 +222,52 @@ h1 {
 	transition: 0.7s;
 }
 
-.skills-container li:hover {
+.skills-container:hover li, 
+.skills-container:hover img {
 	opacity: 1;
 	text-shadow: 0 0 10px white;
 }
 
+.skills {
+	overflow: hidden;
+	max-width: 100%;
+	white-space: nowrap;
+	position: relative;
+}
+
+.skill-list:before,
+.skill-list:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100px;
+	z-index: 2;
+	height: 100%;
+}
+
+.skill-list:before{
+	left: 0;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0),  black);
+}
+
+.skill-list:after{
+	right: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(1, 1, 63));
+}
+
+.skill-list {
+	display: inline-block;
+}
+
 .skills ul {
 	display: flex;
-	gap: 150px;
+	gap: 80px;
 	padding: 20px 40px;
-	overflow: scroll;
+	animation: 30s slide linear infinite;
+}
+
+.skills:hover ul {
+	animation-play-state: paused;
 }
 
 #small-svg {
