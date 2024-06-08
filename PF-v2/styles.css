@@ -38,6 +38,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(to right, black, rgb(1, 1, 63));
+	overflow: hidden;
 }
 
 /* social media styling  */
@@ -261,9 +262,13 @@ h1 {
 
 .skills ul {
 	display: flex;
-	gap: 80px;
+	gap: 140px;
 	padding: 20px 40px;
 	animation: 30s slide linear infinite;
+}
+
+#margin-skill {
+	margin-left: 80px;
 }
 
 .skills:hover ul {
@@ -315,7 +320,17 @@ h1 {
 		}
 
 		.skills ul {
-			gap: 60px;
+			gap: 40px;
 		}
+	}
+}
+
+@media (min-width: 2600px) {
+	.skills ul {
+		gap: 200px;
+	}
+
+	#margin-skill {
+		margin-left: 120px;
 	}
 }
